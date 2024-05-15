@@ -1,0 +1,5 @@
+{
+	"stepDefinitions": [
+		"src/stepDefinitions/*.js"
+	]
+}

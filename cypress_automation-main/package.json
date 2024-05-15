@@ -1,0 +1,33 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy-open": "cypress open",
+    "cy-run": "cypress run",
+    "cy-run:chrome": "cypress run --browser chrome",
+    "cy-regressionAll": "cypress run --browser chrome --spec src/feature/*.feature",
+    "cy-login": "cypress run --browser chrome --spec src/feature/login.feature",
+    "cy-sanity": "cypress run --browser chrome --spec src/feature/sanity.feature",
+    "cy-regression": "cypress run --browser chrome --spec src/feature/homepage.feature",
+    "cy-product": "cypress run --browser chrome --spec src/feature/product.feature",
+    "cy-apiTest": "cypress run --browser chrome --spec src/feature/apiTestcase.feature",
+    "cy-databaseTest": "cypress run --browser chrome --spec src/feature/dataBaseTesting.feature"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.6.3",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "cypress-mysql": "^1.0.2",
+    "cypress-parallel": "^0.14.0",
+    "cypress-real-events": "^1.11.0",
+    "mysql": "^2.18.1"
+  }
+}
